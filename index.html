@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <!-- Personal Information -->
+        <section class="personal-info">
+            <h2 onclick="toggleSection('personal-details')">Personal Information</h2>
+            <div id="personal-details" class="details show">
+                <img src="./profile.jpg" alt="Profile Picture" class="profile-picture">
+                <h3>Muhammad Mubashir Saeedi</h3>
+                <p>Contact: mubashirkhi72@example.com | +92 325 3570380</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <h2 onclick="toggleSection('education-details')">Education</h2>
+            <div id="education-details" class="details show">
+                <p><strong>Degree: Bachelor of Science in Software Engineering</strong> </p>
+                <p>University: Sindh Madressatul Islam University, 2024</p>
+                <p><strong>Degree: Bachelor of Science in Software Engineering</strong></p>
+                <p>University: Sindh Madressatul Islam University, 2024</p>
+                <p><strong>Degree: Bachelor of Science in Software Engineering</strong></p>
+                <p>University: Sindh Madressatul Islam University, 2024</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2 onclick="toggleSection('skills-details')">Skills</h2>
+            <div id="skills-details" class="details show">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Flutter Developer</li>
+                    <li>My SQL</li>
+                    <li>Next Js</li>
+                    <li>React JS</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="experience">
+            <h2 onclick="toggleSection('experience-details')">Work Experience</h2>
+            <div id="experience-details" class="details show">
+
+                <p><strong>Job Title:</strong>Front-End Developer</p>
+                <p><strong>Company:</strong> Codsoft, 2023 - 2024</p>
+                <p><strong>Responsibilities:</strong> Developing responsive web applications.</p>
+                <p><strong>Job Title:</strong> Flutter Developer</p>
+                <p><strong>Company:</strong> Bano Qabil, 2023 - 2024</p>
+                <p><strong>Responsibilities:</strong> Developing responsive web applications.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
